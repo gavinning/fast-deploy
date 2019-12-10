@@ -1,0 +1,23 @@
+{
+  "name": "fast-deploy",
+  "version": "0.0.0",
+  "description": "快速部署测试项目",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gavinning/fast-deploy.git"
+  },
+  "keywords": [
+    "deploy",
+    "fast-deploy"
+  ],
+  "author": "gavinning",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gavinning/fast-deploy/issues"
+  },
+  "homepage": "https://github.com/gavinning/fast-deploy#readme"
+}
