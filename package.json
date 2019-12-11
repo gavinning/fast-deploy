@@ -1,9 +1,12 @@
 {
-  "name": "fast-deploy",
-  "version": "0.0.0",
+  "name": "@gavinning/fast-deploy",
+  "version": "0.1.0",
   "description": "快速部署测试项目",
   "main": "index.js",
   "scripts": {
+    "start": "node bin/www",
+    "dev": "./node_modules/.bin/nodemon bin/www",
+    "prd": "pm2 start bin/www --name=deploy",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +22,20 @@
   "bugs": {
     "url": "https://github.com/gavinning/fast-deploy/issues"
   },
-  "homepage": "https://github.com/gavinning/fast-deploy#readme"
+  "homepage": "https://github.com/gavinning/fast-deploy#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-logger": "^3.2.1",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa2-upload": "^1.0.4",
+    "mkdirp": "^0.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  }
 }
